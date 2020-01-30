@@ -70,12 +70,7 @@ class Spymer:
 			password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 			username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 		iteration = 0			
-		_phone9 = _phone[1:]
-		_phoneAresBank = '+'+_phone[0]+'('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]  # +7+(915)350-99-08
-		_phone9dostavista = _phone9[:3]+'+'+_phone9[3:6]+'-'+_phone9[6:8]+'-'+_phone9[8:10]  # 915+350-99-08
-		_phoneOstin = '+'+_phone[0]+'+('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]  # '+7+(915)350-99-08'
-		_phonePizzahut = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+' '+_phone[7:9]+' '+_phone[9:11]  # '+7 (915) 350 99 08'
-		_phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]  # '915) 350-99-08'
+		
 		print(showstatus(wrapsbrace('info', True) + ('Отправка SMS на: +{}').format(_phone)))
 		print('Спамер запущен.')
 		print('Если Вы хотите остановить - нажмите Ctrl+Z.')
