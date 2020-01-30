@@ -1,12 +1,7 @@
 clear
-echo "--------------------"
-echo "|     Кто ты ?     |"
-echo "|------------------|"
-echo "| 1. Termux        |"
-echo "| 2. Другой Unix   |"
-echo "|                  |"
-echo "| Введите 1 или 2: |"
-echo "--------------------"
+
+echo -e "\e[4;34m Termux \e[0m"
+echo -e "\e[4;34m Other Linux OS. \e[0m"
 read numb
 if [ $numb = "1" ]
 then
@@ -25,18 +20,18 @@ else
 	then
 
 		if [ "$(whoami)" != 'root' ]; then
-			echo "У вас нет прав. Запустите install.sh с root правами (sudo sh ~/spymer/install.sh)"
+			echo "Non-root!! (sudo sh ~/Reborn/start.sh)"
 			exit
 		else
 			apt install python3 python3-pip dos2unix
 			pip3 install requests
 			pip3 install colorama
-			cp ~/spymer/spammer.py /usr/bin/spymer
-			dos2unix /usr/bin/spymer
-			chmod 777 /usr/bin/spymer
+			cp ~/Reborn/sms.py /usr/bin/Reborn
+			dos2unix /usr/bin/Reborn
+			chmod 777 /usr/bin/
 			spymer
 		fi
 	else
-		echo "Некорректный ввод"
+		echo "Inavlid İnput!!!"
 	fi
 fi
