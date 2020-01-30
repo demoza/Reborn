@@ -26,3 +26,5 @@ aaaaa'''+Style.RESET_ALL)
 			cmd = os.system("cd && rm -rf ~/reborn && git clone https://github.com/4nat/Reborn && sh ~/Reborn/start.sh")
 			exit()
 		
+sms = Reborn()
+sms.main()
