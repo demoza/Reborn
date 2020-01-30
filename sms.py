@@ -17,15 +17,16 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 \___  || |\  || | | || |  
     |_/\_| \_/\_| |_/\_/                                              
 ''' + Style.RESET_ALL)
+parser = argparse.ArgumentParser(prog='spymer', description="Made by 4NAT !",epilog='Mail - harunbusiness@aol.com')
+		parser.add_argument('phonenum', metavar='phone', help='Number EX :(+90XXXXX or 90XXXXX)')
+		args = parser.parse_args()
+		_phone = args.phonenum
 
-if _phone == "update":			cmd = os.system("cd && rm -rf ~/Reborn && git clone https://github.com/4nat/Reborn && sh ~/Reborn/start.sh")			exit()
-            def showstatus(message, type='new'):			now = datetime.datetime.now().strftime('%H:%M:%S')			icon = '*'			if type == 'warn':				icon = '!'			else:				if type == 'new':					icon == '*'			message = '[' + icon + '][' + now + ']' + message			return message
-def shutdown(signal, frame):
-    print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
-    sys.exit()
-    
-def sleep(x):			try:				time.sleep(x)			except KeyboardInterrupt:				print('\r' + showstatus(wrapsbrace('except', True) + 'KeyboardInterrupt thrown! Exiting . . .', 'warn'))				exit()
+		if _phone == "update":
+			cmd = os.system("cd && rm -rf ~/Reborn && git clone https://github.com/4nat/Reborn && sh ~/Reborn/start.sh")
+			exit()
 
+   
 def checkinternet():
     res = False
     try:
