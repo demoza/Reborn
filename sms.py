@@ -17,8 +17,8 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 \___  || |\  || | | || |  
     |_/\_| \_/\_| |_/\_/                                              
 ''' + Style.RESET_ALL)
-
-parser = argparse.ArgumentParser(prog='Reborn', description="Made by 4NAT !",epilog='Mail - harunbusiness@aol.com')
+print(Style.RESET_ALL)
+                parser = argparse.ArgumentParser(prog='Reborn', description="Made by 4NAT !",epilog='Mail - harunbusiness@aol.com')
 		parser.add_argument('phonenum', metavar='phone', help='Number EX :(+90XXXXX or 90XXXXX)')
 		args = parser.parse_args()
 		_phone = args.phonenum
