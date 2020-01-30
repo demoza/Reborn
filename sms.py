@@ -28,6 +28,34 @@ print(Style.RESET_ALL)
 			exit()
 
    
+		def showstatus(message, type='new'):
+			now = datetime.datetime.now().strftime('%H:%M:%S')
+			icon = '*'
+			if type == 'warn':
+				icon = '!'
+			else:
+				if type == 'new':
+					icon == '*'
+			message = '[' + icon + '][' + now + ']' + message
+			return message
+		def wrapsbrace(string, endspace=False):
+			if endspace == True:
+				return '[' + string + '] '
+			return '[' + string + ']'
+		def sleep(x):
+			try:
+				time.sleep(x)
+			except KeyboardInterrupt:
+				print('\r' + showstatus(wrapsbrace('except', True) + 'KeyboardInterrupt thrown! Exiting . . .', 'warn'))
+				exit()
+		_phone = args.phonenum
+		if _phone[0] == '+':
+			_phone = _phone[1:]
+		if _phone[0] == '8':
+			_phone = '7'+_phone[1:]
+		if _phone[0] == '9':
+			_phone = '7'+_phone
+
 def checkinternet():
     res = False
     try:
