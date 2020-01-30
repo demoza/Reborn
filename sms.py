@@ -5,9 +5,10 @@ import urllib.request
 import argparse
 
 init()
-class Reborn:
-def main(self):
-os.system('cls' if os.name=='nt' else 'clear')
+  
+class Spymer:
+	def main(self):
+		os.system('cls' if os.name=='nt' else 'clear')
 
 print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
    ___  _   _   ___ _____ 
