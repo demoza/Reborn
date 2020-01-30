@@ -14,7 +14,7 @@ then
 	cp ~/Reborn/sms.py /data/data/com.termux/files/usr/bin/Reborn
 	dos2unix /data/data/com.termux/files/usr/bin/Reborn
 	chmod 777 /data/data/com.termux/files/usr/bin/Reborn
-	spymer
+	Reborn
 else
 	if [ $numb = "2" ]
 	then
