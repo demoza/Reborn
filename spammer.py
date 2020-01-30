@@ -63,13 +63,6 @@ class Spymer:
 			except KeyboardInterrupt:
 				print('\r' + showstatus(wrapsbrace('except', True) + 'KeyboardInterrupt thrown! Exiting . . .', 'warn'))
 				exit()
-		_phone = args.phonenum
-		if _phone[0] == '+':
-			_phone = _phone[1:]
-		if _phone[0] == '8':
-			_phone = '7'+_phone[1:]
-		if _phone[0] == '9':
-			_phone = '7'+_phone
 		
 		_name = ''
 		for x in range(12):
