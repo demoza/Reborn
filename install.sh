@@ -1,7 +1,7 @@
 clear
 
-echo -e "\e[4;34m Termux \e[0m"
-echo -e "\e[4;34m Other Linux OS. \e[0m"
+echo -e "\e[4;34m 1- Termux \e[0m"
+echo -e "\e[4;34m 2- Other Linux OS. \e[0m"
 read numb
 if [ $numb = "1" ]
 then
