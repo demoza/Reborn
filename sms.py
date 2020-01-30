@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# spymer v6
+# reborn v6
 # Author: FSystem88
 import requests
 import random
