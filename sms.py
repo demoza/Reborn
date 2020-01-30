@@ -2,7 +2,6 @@ import requests, random, datetime, sys, time, argparse, os
 from colorama import init, Fore, Back, Style
 from time import sleep
 import urllib.request
-import argparse
 
   
 class Spymer:
